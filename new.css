@@ -9,6 +9,7 @@ font-family: 'FreeSetBoldC', sans-serif;
 
 .w-wrapper {
   background: #fff;
+  overflow: hidden;
   padding-bottom: 140px;
 }
 

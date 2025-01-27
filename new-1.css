@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 
@@ -32,14 +39,19 @@
 
 .w-hero--two .w-hero__inner {
   margin-top: 27px;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .w-hero--two .w-hero__inner .w-btn {
   top: -7px;
-  order: initial;
+  -webkit-box-ordinal-group: initial;
+      -ms-flex-order: initial;
+          order: initial;
   position: relative;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .w-hero__promo {
@@ -199,13 +211,16 @@
 }
 
 .w-tested__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .w-tested__img {
   max-width: 137px;
   margin-right: 36px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .w-tested__info {
@@ -234,6 +249,7 @@
 
 .w-laboratory {
   z-index: 1;
+  overflow: hidden;
   margin-top: 90px;
   position: relative;
   background: #E6DEF8;
@@ -288,6 +304,8 @@
   position: absolute;
   pointer-events: none;
   top: 0;bottom: 0;right: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background: -o-linear-gradient(#fff, #fff);
   background: linear-gradient(#fff, #fff);
 }
 
@@ -300,9 +318,15 @@
   border-radius: 21px;
   padding: 60px 60px 50px;
   border: 3px solid #714ABF;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .w-specialists__img {
@@ -310,9 +334,16 @@
   overflow: hidden;
   border-radius: 50%;
   width: 225px;height: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -o-radial-gradient(50% 50%, 50% 50%, #E6DEF8 0%, #9274CE 100%);
   background: radial-gradient(50% 50% at 50% 50%, #E6DEF8 0%, #9274CE 100%);
 }
 
@@ -342,7 +373,9 @@
   font-size: 23px;
   margin: 25px 0 0;
   font-weight: 600;
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .w-specialists__btn {
@@ -355,6 +388,8 @@
   opacity: 1;
   background: transparent;
   width: 21px;height: 55px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
 }
 
@@ -416,7 +451,9 @@
 /* Reviews */
 
 .w-reviews--two .w-reviews__btn {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 
@@ -736,7 +773,9 @@
     width: 1128px;height: 751px;
     top: auto;left: 50%;right: initial;bottom: -255px;
     background: url(img/w-offer-img-1-mob.png) center 0/cover no-repeat !important;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .w-reviews--two .w-reviews__btn .w-btn {
     width: calc(50% - 10px);
@@ -759,7 +798,9 @@
     position: absolute;
     top: 50%;right: 20px;
     width: 97px;height: 128px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .w-laboratory__img {
     width: 580px;
@@ -771,8 +812,11 @@
     right: 70px;
   }
   .w-reviews--two .w-reviews__btn {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .w-reviews--two .w-reviews__btn .w-btn {
     margin-left: 5px;
@@ -863,7 +907,6 @@
     margin-bottom: 55px;
   }
 }
-
 
 
 
